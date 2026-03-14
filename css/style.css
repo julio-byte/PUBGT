@@ -4,102 +4,148 @@
     box-sizing:border-box;
 }
 
-/* FUNDO DO SITE */
-
 body{
+    font-family:Roboto, sans-serif;
     background:#0f172a;
-    font-family:Arial, Helvetica, sans-serif;
     color:white;
 }
 
-/* MENU */
+/* NAVBAR */
 
-nav{
-    background:#020617;
-    padding:20px;
+.navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:20px;
+    background:#020617;
+    flex-wrap:wrap;
 }
 
-nav p{
-    font-size:30px;
-    font-weight:bold;
+.logo{
+    font-family:Orbitron;
     color:#38bdf8;
 }
 
-nav ul{
-    list-style:none;
+.navbar ul{
     display:flex;
+    list-style:none;
+    flex-wrap:wrap;
 }
 
-nav li{
+.navbar li{
     margin-left:20px;
 }
 
-nav a{
+.navbar a{
     text-decoration:none;
     color:white;
-    transition:0.3s;
 }
 
-nav a:hover{
-    color:#38bdf8;
-}
+/* HERO */
 
-/* HEADER */
-
-header{
+.hero{
     text-align:center;
-    padding:80px;
+    padding:80px 20px;
     background:linear-gradient(135deg,#020617,#1e293b);
 }
 
-h1{
-    font-size:60px;
-    color:#38bdf8;
-}
-
-h2{
+.hero h1{
     font-size:40px;
-    margin-top:40px;
 }
 
-p{
-    font-size:18px;
-    margin-top:10px;
+.hero p{
+    margin-top:15px;
 }
 
 /* SEÇÕES */
 
-section{
-    padding:50px;
+.section{
+    padding:60px 20px;
     text-align:center;
 }
 
-/* IMAGENS */
+/* CARDS */
 
-.img_padrao{
-    width:350px;
-    margin:20px;
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    background:#1e293b;
     border-radius:10px;
-    transition:0.3s;
+    padding:20px;
+    width:300px;
 }
 
-.img_padrao:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 15px #38bdf8;
+.card img{
+    width:100%;
+    border-radius:10px;
 }
 
-/* LOGO CONTATO */
+/* CONTATO */
 
-.img_logo{
+.contact{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.icon{
     width:60px;
 }
 
 /* FOOTER */
 
 footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:40px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .navbar ul{
+        margin-top:15px;
+        flex-direction:column;
+    }
+
+    .navbar li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .contact{
+        flex-direction:column;
+        gap:20px;
+    }
+}
+
     text-align:center;
     padding:30px;
     background:#020617;
