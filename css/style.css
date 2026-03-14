@@ -1,31 +1,107 @@
-title {
-    color: midnightblue;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body{ 
-    background: chartreuse;
-    margin-left: 400px;
+/* FUNDO DO SITE */
+
+body{
+    background:#0f172a;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
 }
 
-h1 {
-    color: mediumblue;
-    font-family: fantasy;
+/* MENU */
 
+nav{
+    background:#020617;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-h2 {
-    font-family: monospace;
+nav p{
+    font-size:30px;
+    font-weight:bold;
+    color:#38bdf8;
 }
-p {
-    font-size: 20px;
+
+nav ul{
+    list-style:none;
+    display:flex;
 }
-h2 {
-    font-size: 50px;
+
+nav li{
+    margin-left:20px;
 }
-h1 {
-    font-size: 80px;
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
 }
-.img_padrao {
-    margin-bottom: 20px;
-    width: 400px;
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:80px;
+    background:linear-gradient(135deg,#020617,#1e293b);
+}
+
+h1{
+    font-size:60px;
+    color:#38bdf8;
+}
+
+h2{
+    font-size:40px;
+    margin-top:40px;
+}
+
+p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:50px;
+    text-align:center;
+}
+
+/* IMAGENS */
+
+.img_padrao{
+    width:350px;
+    margin:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.img_padrao:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px #38bdf8;
+}
+
+/* LOGO CONTATO */
+
+.img_logo{
+    width:60px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    margin-top:40px;
 }
